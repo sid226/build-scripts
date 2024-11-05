@@ -36,7 +36,7 @@ rm -f OpenJDK17U-jdk_ppc64le_linux_hotspot_21.0.5_11.tar.gz
 git clone $PACKAGE_URL
 cd $PACKAGE_NAME
 git checkout $PACKAGE_VERSION
-
+./gradlew --gradle-version 8.10.2
 if ! ./gradlew clean build ; then
      echo "------------------$PACKAGE_NAME:Build_fails---------------------"
      echo "$PACKAGE_VERSION $PACKAGE_NAME"
