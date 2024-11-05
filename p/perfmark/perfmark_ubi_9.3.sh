@@ -22,6 +22,8 @@ PACKAGE_NAME=perfmark
 PACKAGE_URL=https://github.com/perfmark/perfmark.git
 PACKAGE_VERSION=${1:-v0.27.0}
 
+yum install -y wget tar git 
+
 #Install temurin java21
 wget https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.5_11.tar.gz
 tar -C /usr/local -zxf OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.5_11.tar.gz
